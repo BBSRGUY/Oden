@@ -1,0 +1,19 @@
+{
+  "model_type": "bpe",
+  "vocab_size": 75000,
+  "special_tokens": {
+    "pad_token": "<pad>",
+    "unk_token": "<unk>",
+    "bos_token": "<s>",
+    "eos_token": "</s>",
+    "mask_token": "<mask>",
+    "thinking_token": "<thinking>",
+    "answer_token": "<answer>",
+    "en_token": "<en>",
+    "or_token": "<or>",
+    "user_token": "<user>",
+    "assistant_token": "<assistant>",
+    "system_token": "<system>"
+  },
+  "tokenizer_class": "PreTrainedTokenizerFast"
+}
