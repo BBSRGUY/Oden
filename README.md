@@ -1,32 +1,23 @@
-# Oden
-A bilingual Large Language Model
+# ODEN – Open Dynamic External‑memory Network ( ODIA-ENGLISH LLM )
+A self adapting Transformer architecture with hierarchical external memory, adaptive multi‑modal attention, Mixture‑of‑Experts feed‑forward, and FP8 quantisation.
 
-## Overview
+ODEN is an advanced language model architecture with cognitive capabilities including hierarchical memory, adaptive multi-modal attention, and expert-based processing.
 
-ODEN (Odia-English Neural Reasoning System) is an advanced bilingual multimodal AI model with superior reasoning capabilities. It features a transformer-based architecture enhanced with Neural Turing Machine memory mechanisms, evolutionary learning strategies, and a novel optimization approach.
+## Features
 
-Key features:
-- **Bilingual Support**: Seamlessly processes and generates text in both English and Odia
-- **Neural Turing Machine Memory**: External memory module for enhanced reasoning and long-context understanding
-- **Evolutionary Learning**: Self-optimizing architecture through neuroevolution techniques
-- **Novelty Search**: Diversity-driven search to encourage robust reasoning pathways
-- **Vector Database Integration**: Long-term knowledge retention via PostgreSQL with pgvector
+- **Hierarchical External Memory**: Multi-level memory system with consolidation between levels
+- **Adaptive Multi-Modal Attention**: Specialized attention patterns with learned routing
+- **Mixture of Experts**: Dynamic routing of tokens to specialized feed-forward networks
+- **Self-Correction Mechanism**: Refinement of attention outputs
+- **Advanced Positional Encoding**: Dual-frequency rotary position embeddings
+- **Model Parallelism**: Efficient distributed training across multiple GPUs
+- **Quantization Support**: FP8/INT8 precision for inference optimization
 
-## Model Variants
+- **Dynamic Memory Management**: Adaptive memory allocation and deallocation
 
-The ODEN architecture serves as the foundation for specialized models:
 
-- **ODEN-C**: Optimized for coding and software development tasks
-- **ODEN-D**: Specialized for data analysis and visualization
-- **ODEN-M**: Enhanced for mathematical reasoning and problem-solving
-- **ODEN-S**: Designed for scientific research and academic writing
-
-## Architecture
-
-ODEN implements a novel memory-augmented transformer architecture:
-
-1. **Hybrid Tokenization**: Combines subword tokenization for both English and Odia
-2. **Contextual Embeddings**: Language-aware embedding layer with positional encoding
-3. **Memory-Augmented Transformer**: Transformer layers with NTM memory integration
-4. **Vector Database**: Long-term knowledge storage using PostgreSQL with pgvector
-5. **Evolutionary Optimization**: Self-improving architecture through neuroevolution
+Model Sizes
+Size    Parameters  Hidden Size     Attention Heads   Layers  Memory Slots    
+Small   1.3B        1024            8                 16      512
+Base    7B          2048            16                32      1024
+Large   30B         4096            32                48      2048 
